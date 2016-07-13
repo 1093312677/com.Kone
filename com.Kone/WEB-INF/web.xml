@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <context-param>
+  	<param-name>ab</param-name>
+  	<param-value>hello</param-value>
+  </context-param>
+  
+  <error-page>
+  	<exception-type>java.lang.Exception</exception-type>
+  	<location>/error.jsp</location>
+  </error-page>
+  
+  <display-name>com.Kone</display-name>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>Login</servlet-name>
+    <servlet-class>com.Kone.Login</servlet-class>
+    <init-param>
+    	<param-name>abc</param-name>
+    	<param-value>init value</param-value>
+    </init-param>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>SaveBill</servlet-name>
+    <servlet-class>com.Kone.SaveBill</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>addIncome</servlet-name>
+    <servlet-class>com.Kone.addIncome</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>addBorrow</servlet-name>
+    <servlet-class>com.Kone.addBorrow</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>CheckBill</servlet-name>
+    <servlet-class>com.Kone.CheckBill</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>CheckIncome</servlet-name>
+    <servlet-class>com.Kone.CheckIncome</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>CheckBorrow</servlet-name>
+    <servlet-class>com.Kone.CheckBorrow</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>UpdateBack</servlet-name>
+    <servlet-class>com.Kone.UpdateBack</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>UploadImages</servlet-name>
+    <servlet-class>com.upload.UploadImages</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>CheckBillAndriod</servlet-name>
+    <servlet-class>com.AndroidBill.CheckBillAndriod</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>SaveBill_Android</servlet-name>
+    <servlet-class>com.AndroidBill.SaveBill_Android</servlet-class>
+  </servlet>
+
+
+
+
+
+
+
+
+
+
+  
+  <servlet-mapping>
+    <servlet-name>Login</servlet-name>
+    <url-pattern>/servlet/Login</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SaveBill</servlet-name>
+    <url-pattern>/servlet/SaveBill</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>addIncome</servlet-name>
+    <url-pattern>/servlet/addIncome</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>addBorrow</servlet-name>
+    <url-pattern>/servlet/addBorrow</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CheckBill</servlet-name>
+    <url-pattern>/servlet/CheckBill</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CheckIncome</servlet-name>
+    <url-pattern>/servlet/CheckIncome</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CheckBorrow</servlet-name>
+    <url-pattern>/servlet/CheckBorrow</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UpdateBack</servlet-name>
+    <url-pattern>/servlet/UpdateBack</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UploadImages</servlet-name>
+    <url-pattern>/servlet/UploadImages</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CheckBillAndriod</servlet-name>
+    <url-pattern>/servlet/CheckBillAndriod</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SaveBill_Android</servlet-name>
+    <url-pattern>/servlet/SaveBill_Android</url-pattern>
+  </servlet-mapping>
+ 
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  
+ 
+  
+</web-app>
